@@ -1,0 +1,147 @@
+
+@font-face {
+    font-family: 'thorns';
+    src:url(./fonts/Wickedqueen-Wyz34.ttf)
+  }
+  @font-face {
+    font-family: 'chopstic';
+    src:url(./fonts/Chopsic-K6Dp.ttf)
+  }
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: lightskyblue;
+}
+
+.neon {
+    position: relative;
+    margin-top: 20px;
+    overflow: hidden;
+    border:5px solid navy;
+    border-radius: 15px;
+    filter: brightness(200%);
+}
+
+.text {
+    color: white;
+    background-color: black;
+    font-size: 65px;
+    font-weight: bold;
+    font-family:'chopstic';
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    user-select: no;
+    padding: 10px;
+
+}
+
+.text::before {
+    content: attr(data-text);
+    position: absolute;
+    color: white;
+    filter: blur(0.02em);
+    mix-blend-mode: difference;
+}
+
+.gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, lightBlue, blue, lightBlue, blue, lightBlue);
+    mix-blend-mode: multiply;
+}
+
+.spotlight {
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle, white, transparent 25%) center / 25% 25%,
+        radial-gradient(circle, white, black 25%) center / 12.5% 12.5%;
+    animation: light 5s linear infinite;
+    mix-blend-mode: color-dodge;
+}
+
+@keyframes light {
+    to {
+        transform: translate(50%, 50%);
+    }
+}
+.title h1{
+    font-family: 'thorns';
+    letter-spacing: 3px;
+    font-size:calc(60px + 1.5vw);
+    color: black;
+    font: oblique;
+    text-decoration-color: black;
+
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.TridentImg{
+    height: 100px;
+    width: 100px;
+}
+.projectContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: center;
+}
+.BorderStage{
+    height: 40vw;
+    width: 100%;
+    background-image: url(./images/Onepizo.png);
+    background-size: 450px 320px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.BorderStage:hover{
+    animation: bigger infinite ease 5s;
+}
+#yigal-store{
+    background-image: url(./images/yigal-store.png);
+    background-position: 50% 56%;
+    background-size: 430px 290px;
+}
+#GameCard{
+    background-image: url(./images/CardGame.png);
+    background-position: 50% 56%;
+    background-size: 430px 290px;
+}
+@keyframes bigger{
+    0% {background-size: 450px 320px;}
+    50% {background-size: 500px 370px;}
+    100% {background-size: 450px 320px;}
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    width: 550px;
+    background-color: #1E90FF;
+    margin : 30px;
+    border-radius: 15px;
+    height: 55vw;
+}
+.project h1{
+    font-family: fantasy;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
