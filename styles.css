@@ -153,6 +153,10 @@ body {
         height: 600px;
         background-size: 700px 400px;
     }
-    
+    @keyframes bigger{
+        0% {background-size: 700px 400px;}
+        50% {background-size: 780 450;}
+        100% {background-size: 700px 400px;}
+    }
     
 }
