@@ -135,11 +135,13 @@ body {
 	border: 1px solid lightblue;
 }
 .project  p{
-	align-self: flex-start;
+	align-self: center;
+	width: 80%;
 	font-size: 15px;
 	margin: 10px;
 	color: white;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	text-align: center;
 }
 .res-span{
 	color: navy;
@@ -165,7 +167,7 @@ body {
 		height: 600px;
 	}
 	.project p{
-		align-self: flex-start;
+		align-self: center;
 		font-size: 35px;
 	}
     
