@@ -95,7 +95,7 @@ body {
 .projectContainer{
     display: flex;
     flex-wrap: wrap;
-    width: 105vw;
+    width: 100%;
     justify-content: center;
 }
 
@@ -110,7 +110,7 @@ body {
     background-color: #1E90FF;
     margin : 30px;
     border-radius: 15px;
-    height: 56vw;
+    height: 45vw;
 }
 .project h1{
     font-family: fantasy;
@@ -144,7 +144,7 @@ body {
 @media screen and (max-width: 1000px){
     .project{
         width: 100%;
-		height: 850px;
+		height: 950px;
 	}
 	.item{
 		height: 550px ;
@@ -153,7 +153,8 @@ body {
 		height: 600px;
 	}
 	.project p{
-		font-size: 20px;
+		align-self: flex-start;
+		font-size: 30px;
 	}
     
 }
