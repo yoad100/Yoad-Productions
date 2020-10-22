@@ -106,11 +106,12 @@ body {
     flex-direction: column;
     align-items: center;
     border: 2px solid white;
-    width: 450px;
+    width: 550px;
     background-color: #1E90FF;
-    margin : 30px;
+    margin : 10px;
     border-radius: 15px;
-    height: 45vw;
+	height: 45vw;
+	overflow: hidden;
 }
 .project h1{
     font-family: fantasy;
@@ -134,17 +135,20 @@ body {
 	border: 1px solid lightblue;
 }
 .project  p{
+	align-self: flex-start;
 	font-size: 15px;
 	margin: 10px;
+	color: white;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .res-span{
-	color: red;
+	color: navy;
 	font-weight: bold;
 }
 @media screen and (max-width: 1000px){
     .project{
         width: 100%;
-		height: 950px;
+		height: 1050px;
 	}
 	.item{
 		height: 550px ;
@@ -154,7 +158,7 @@ body {
 	}
 	.project p{
 		align-self: flex-start;
-		font-size: 30px;
+		font-size: 35px;
 	}
     
 }
