@@ -114,7 +114,7 @@ body {
 	overflow: hidden;
 }
 .project h1{
-    font-family: fantasy;
+    font-family: fantasy,tahoma;
     color: white;
     text-decoration: underline;
     text-decoration-color: black;
